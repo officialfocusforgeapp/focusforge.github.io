@@ -1,135 +1,540 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="color-scheme" content="dark" />
-<title>FocusForge Terms of Service</title>
-<link rel="icon" href="/favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>FocusForge Terms of Service</title>
+  <meta name="description" content="FocusForge Terms of Service (Effective date: March 3, 2026)" />
+  <link rel="icon" href="/favicon.ico" />
 
-<style>
-/* IDENTICAL CSS AS PRIVACY PAGE */
-:root{
-  --bg:#070b12;
-  --glass:rgba(15,22,38,0.72);
-  --text:#eaf4ff;
-  --muted:#9fb7cc;
-  --border:rgba(120,200,255,0.16);
-  --accent:#78d4ff;
-  --radius:20px;
-  --maxw:1100px;
-  --shadow:0 40px 120px rgba(0,0,0,0.6);
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-  background:
-    radial-gradient(1200px 800px at 15% 10%, rgba(120,212,255,.15), transparent 60%),
-    linear-gradient(180deg,#0b1220 0%,#070b12 100%);
-  color:var(--text);
-  line-height:1.7;
-}
-.wrap{max-width:var(--maxw);margin:auto;padding:60px 24px;}
-header h1{margin:0;font-size:38px;letter-spacing:-0.5px;}
-header p{margin:8px 0 0;color:var(--muted)}
-nav{margin-top:20px;display:flex;gap:28px;}
-nav a{color:var(--accent);text-decoration:none;font-weight:500;}
-.card{
-  margin-top:40px;
-  background:var(--glass);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:48px;
-  box-shadow:var(--shadow);
-  backdrop-filter:blur(18px);
-}
-section{margin-top:44px}
-section:first-of-type{margin-top:0}
-h2{font-size:22px;margin:0 0 16px;}
-ul{margin:10px 0 10px 20px;}
-a{color:var(--accent)}
-footer{
-  margin-top:80px;
-  padding:40px 24px;
-  text-align:center;
-  color:var(--muted);
-}
-</style>
+  <!-- Optional: update once your custom domain is live -->
+  <link rel="canonical" href="https://focusforge.app/terms" />
+
+  <style>
+    /* IDENTICAL CSS as privacy.html to ensure perfect match */
+    :root{
+      --bg0:#070b12;
+      --bg1:#0a1222;
+
+      --card: rgba(12, 18, 30, 0.76);
+      --text: rgba(240, 248, 255, 0.93);
+      --muted: rgba(240, 248, 255, 0.72);
+      --faint: rgba(240, 248, 255, 0.56);
+
+      --border: rgba(120, 200, 255, 0.18);
+      --border2: rgba(120, 200, 255, 0.12);
+
+      --accent: #78d7ff;
+      --accent2:#6ee7ff;
+      --link: #9be7ff;
+
+      --shadow: 0 24px 90px rgba(0,0,0,0.58);
+      --radius: 20px;
+      --maxw: 1100px;
+
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      line-height: 1.62;
+      background:
+        radial-gradient(1200px 820px at 16% 10%, rgba(120,215,255,0.22), transparent 60%),
+        radial-gradient(980px 720px at 86% 18%, rgba(110,231,255,0.14), transparent 60%),
+        radial-gradient(1100px 900px at 55% 110%, rgba(120,200,255,0.10), transparent 66%),
+        linear-gradient(180deg, var(--bg1) 0%, var(--bg0) 55%, #070b12 100%);
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+    }
+
+    body::before{
+      content:"";
+      position: fixed;
+      inset: 0;
+      pointer-events:none;
+      z-index: 0;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,255,255,0.020) 0px,
+          rgba(255,255,255,0.020) 1px,
+          rgba(0,0,0,0.000) 6px,
+          rgba(0,0,0,0.000) 12px
+        ),
+        radial-gradient(820px 520px at 25% 25%, rgba(255,255,255,0.030), transparent 62%),
+        radial-gradient(920px 580px at 75% 55%, rgba(255,255,255,0.022), transparent 64%);
+      mix-blend-mode: overlay;
+      opacity: 0.62;
+    }
+
+    body::after{
+      content:"";
+      position: fixed;
+      inset: -18%;
+      pointer-events:none;
+      z-index: 0;
+      background:
+        radial-gradient(620px 440px at 28% 44%, rgba(180,230,255,0.050), transparent 66%),
+        radial-gradient(560px 380px at 70% 46%, rgba(180,230,255,0.040), transparent 66%),
+        radial-gradient(760px 520px at 52% 72%, rgba(180,230,255,0.034), transparent 70%);
+      filter: blur(18px);
+      opacity: 0.76;
+      animation: coldSmoke 16s ease-in-out infinite;
+    }
+    @keyframes coldSmoke{
+      0%{transform:translate3d(-1.6%, -1.0%, 0) scale(1.02);}
+      50%{transform:translate3d( 1.8%,  1.1%, 0) scale(1.04);}
+      100%{transform:translate3d(-1.6%, -1.0%, 0) scale(1.02);}
+    }
+    @media (prefers-reduced-motion: reduce){
+      body::after{animation:none;}
+    }
+
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 42px 16px 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left:16px; top:16px; width:auto; height:auto;
+      padding:10px 12px; border-radius:14px;
+      background: var(--card); border:1px solid var(--border);
+      box-shadow: var(--shadow);
+      z-index: 9999;
+    }
+
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      margin-bottom: 22px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 260px;
+    }
+    .logo{
+      width:42px; height:42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(120,215,255,1), rgba(110,231,255,1));
+      box-shadow:
+        0 0 30px rgba(120,215,255,0.26),
+        0 14px 40px rgba(0,0,0,0.22);
+    }
+    .brand h1{
+      font-size: 15px;
+      margin:0;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+    }
+    .brand p{
+      margin:2px 0 0;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    .pill{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border:1px solid var(--border);
+      background: rgba(12,18,30,0.58);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.18);
+      font-size: 12.5px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .pill b{color: var(--text); font-weight: 650}
+    .dot{
+      width:8px; height:8px; border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(120,215,255,0.16);
+    }
+
+    .hero{
+      padding: 18px 0 18px;
+    }
+    .hero h2{
+      margin:0;
+      font-size: clamp(28px, 3.8vw, 44px);
+      letter-spacing: -0.6px;
+      line-height: 1.08;
+    }
+    .hero .sub{
+      margin-top: 10px;
+      color: var(--muted);
+      max-width: 78ch;
+      font-size: 15px;
+    }
+
+    .navlinks{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .navlinks a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      border:1px solid var(--border2);
+      background: rgba(255,255,255,0.02);
+      color: var(--text);
+      text-decoration:none;
+      font-size: 13px;
+    }
+    .navlinks a[aria-current="page"]{
+      border-color: rgba(120,215,255,0.30);
+      background: rgba(120,215,255,0.10);
+    }
+    .navlinks a:hover{
+      border-color: rgba(120,215,255,0.26);
+      background: rgba(120,215,255,0.08);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 290px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-top: 18px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns: 1fr;}
+    }
+
+    nav.toc{
+      position: sticky;
+      top: 16px;
+      padding: 16px;
+      border:1px solid var(--border);
+      background: rgba(12,18,30,0.62);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    nav.toc h3{
+      margin: 0 0 10px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    nav.toc a{
+      display:block;
+      padding: 9px 10px;
+      margin: 4px 0;
+      border-radius: 12px;
+      color: var(--text);
+      border: 1px solid transparent;
+    }
+    nav.toc a:hover{
+      background: rgba(120,215,255,0.10);
+      border-color: rgba(120,215,255,0.18);
+      text-decoration:none;
+    }
+    .toc .small{
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--faint);
+    }
+
+    article.card{
+      padding: 24px;
+      border:1px solid var(--border);
+      background: rgba(12,18,30,0.68);
+      backdrop-filter: blur(14px);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    section.policy{
+      padding-top: 8px;
+      margin-top: 18px;
+      border-top: 1px solid var(--border2);
+    }
+    section.policy:first-of-type{
+      border-top:none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    h3.section-title{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.2px;
+    }
+    h4{
+      margin: 16px 0 8px;
+      font-size: 14px;
+      color: var(--text);
+    }
+    p{margin: 10px 0; color: var(--text)}
+    .muted{color: var(--muted)}
+    ul.list{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    ul.list li{margin: 7px 0;}
+
+    footer{
+      margin-top: 22px;
+      padding: 22px 0 10px;
+      color: var(--faint);
+    }
+    .footer-row{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border2);
+    }
+    .footer-links{display:flex; gap: 14px; flex-wrap:wrap;}
+    .footer-links a{color: var(--muted);}
+
+    [id]{scroll-margin-top: 18px}
+  </style>
 </head>
 
 <body>
-<div class="wrap">
-<header>
-  <h1>FocusForge Terms of Service</h1>
-  <p>Effective Date: March 3, 2026</p>
-  <nav>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/terms.html">Terms of Service</a>
-  </nav>
-</header>
+  <a class="skip" href="#content">Skip to content</a>
 
-<div class="card">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand" aria-label="FocusForge">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>FocusForge</h1>
+          <p>Terms of Service</p>
+        </div>
+      </div>
 
-<section>
-<h2>1. Binding Agreement</h2>
-<p>These Terms constitute a legally binding agreement governing your access to and use of the FocusForge Service.</p>
-</section>
+      <div class="pill" aria-label="Effective date">
+        <span class="dot" aria-hidden="true"></span>
+        <span><b>Effective date:</b> March 3, 2026</span>
+      </div>
+    </div>
 
-<section>
-<h2>2. License</h2>
-<p>A limited, revocable, non-exclusive license is granted for personal, non-commercial use.</p>
-</section>
+    <div class="hero">
+      <h2>Terms of Service</h2>
+      <p class="sub">
+        These Terms of Service (“Terms”) govern your use of the FocusForge Android app and related services. By creating an account, clicking “Agree,” or using the Service, you agree to these Terms.
+      </p>
 
-<section>
-<h2>3. Acceptable Use</h2>
-<ul>
-<li>No reverse engineering or service disruption.</li>
-<li>No unauthorized use of parental controls.</li>
-<li>No circumvention of billing mechanisms.</li>
-</ul>
-</section>
+      <div class="navlinks" aria-label="Primary pages">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html" aria-current="page">Terms</a>
+        <a href="/refunds.html">Refunds</a>
+        <a href="/dmca.html">DMCA</a>
+      </div>
+    </div>
 
-<section>
-<h2>4. Subscriptions</h2>
-<p>Subscription billing and refunds are governed by the applicable platform provider.</p>
-</section>
+    <main id="content">
+      <div class="grid">
+        <nav class="toc" aria-label="Table of contents">
+          <h3>On this page</h3>
+          <a href="#acceptance">1. Acceptance and Eligibility</a>
+          <a href="#scope">2. Service Scope</a>
+          <a href="#license">3. License</a>
+          <a href="#accounts">4. Accounts and Family Features</a>
+          <a href="#acceptable-use">5. Acceptable Use</a>
+          <a href="#permissions">6. Permissions and Device Controls</a>
+          <a href="#billing">7. Subscriptions, Premium Features, and Ads</a>
+          <a href="#beta">8. Beta Features and Availability</a>
+          <a href="#privacy">9. Privacy</a>
+          <a href="#termination">10. Termination</a>
+          <a href="#disclaimers">11. Disclaimers</a>
+          <a href="#liability">12. Limitation of Liability</a>
+          <a href="#indemnity">13. Indemnification</a>
+          <a href="#disputes">14. Dispute Resolution</a>
+          <a href="#law">15. Governing Law</a>
+          <a href="#changes">16. Changes to Terms</a>
+          <a href="#contact">17. Contact</a>
 
-<section>
-<h2>5. Intellectual Property</h2>
-<p>All proprietary rights remain exclusively with FocusForge.</p>
-</section>
+          <div class="small">
+            Last updated: <span class="mono">2026-03-03</span>
+          </div>
+        </nav>
 
-<section>
-<h2>6. Disclaimer</h2>
-<p>The Service is provided “as is” without warranties of any kind.</p>
-</section>
+        <article class="card" aria-label="Terms of Service content">
+          <section id="acceptance" class="policy">
+            <h3 class="section-title">1. Acceptance and Eligibility</h3>
+            <p>
+              By using the Service, you represent that you have the legal capacity to enter into these Terms. If you are using the Service on behalf of a minor or as a parent/guardian, you represent that you have lawful authority to do so and, where required, have obtained valid consent.
+            </p>
+            <p class="muted">
+              <b>Electronic acceptance:</b> clicking “Agree,” checking an acceptance box, or otherwise affirmatively indicating consent constitutes a legally binding agreement equivalent to a handwritten signature.
+            </p>
+          </section>
 
-<section>
-<h2>7. Limitation of Liability</h2>
-<p>Aggregate liability shall not exceed payments made in the preceding 12 months.</p>
-</section>
+          <section id="scope" class="policy">
+            <h3 class="section-title">2. Service Scope</h3>
+            <p>
+              FocusForge provides tools to configure app-blocking rules, run focus sessions, and support accountability and family control features. The Service is a behavioral productivity tool and is not a medical, legal, therapeutic, or emergency service.
+            </p>
+          </section>
 
-<section>
-<h2>8. Arbitration</h2>
-<p>Disputes shall be resolved through binding arbitration in North Carolina.</p>
-</section>
+          <section id="license" class="policy">
+            <h3 class="section-title">3. License</h3>
+            <p>
+              Subject to your compliance with these Terms, FocusForge grants you a limited, non-exclusive, non-transferable, revocable license to use the Service for personal, non-commercial purposes.
+            </p>
+          </section>
 
-<section>
-<h2>9. Governing Law</h2>
-<p>Governed by the laws of North Carolina.</p>
-</section>
+          <section id="accounts" class="policy">
+            <h3 class="section-title">4. Accounts and Family Features</h3>
+            <ul class="list">
+              <li>You are responsible for maintaining accurate account information and safeguarding account access.</li>
+              <li>Parent/child linking and device controls must be used only with lawful authority and consent.</li>
+              <li>You agree not to misuse family features to monitor or control another person’s device without permission where required by law.</li>
+            </ul>
+          </section>
 
-<section>
-<h2>10. Contact</h2>
-<p><a href="mailto:officialfocusforgeapp@gmail.com">officialfocusforgeapp@gmail.com</a></p>
-</section>
+          <section id="acceptable-use" class="policy">
+            <h3 class="section-title">5. Acceptable Use</h3>
+            <p>You agree not to:</p>
+            <ul class="list">
+              <li>Reverse engineer, disable, interfere with, or disrupt Service operations or security.</li>
+              <li>Use the Service to violate laws, rights, or platform policies.</li>
+              <li>Circumvent payment, entitlement, rate limits, or safety mechanisms.</li>
+              <li>Use family controls without proper authorization.</li>
+            </ul>
+          </section>
 
-</div>
+          <section id="permissions" class="policy">
+            <h3 class="section-title">6. Permissions and Device Controls</h3>
+            <ul class="list">
+              <li>Accessibility permission is required for app-blocking enforcement.</li>
+              <li>Usage Access is optional and powers insight/projection features.</li>
+              <li>You can revoke permissions from Android settings at any time; certain features may stop functioning.</li>
+            </ul>
+          </section>
 
-<footer>
-© 2026 FocusForge. All rights reserved.
-</footer>
-</div>
+          <section id="billing" class="policy">
+            <h3 class="section-title">7. Subscriptions, Premium Features, and Ads</h3>
+            <ul class="list">
+              <li>Certain features may require a paid plan.</li>
+              <li>Billing, renewals, and cancellations are governed by Google Play terms and your Play account settings.</li>
+              <li>If ads are enabled, ad interactions may be required for ad-gated functionality in supported builds.</li>
+            </ul>
+          </section>
+
+          <section id="beta" class="policy">
+            <h3 class="section-title">8. Beta Features and Availability</h3>
+            <p>
+              Beta, experimental, or pre-release features may change, be unstable, or be removed without notice. We may modify, suspend, or discontinue portions of the Service.
+            </p>
+          </section>
+
+          <section id="privacy" class="policy">
+            <h3 class="section-title">9. Privacy</h3>
+            <p>
+              Your use is also governed by the FocusForge Privacy Policy. If there is a conflict between these Terms and the Privacy Policy regarding data handling, the Privacy Policy controls for privacy/data topics.
+            </p>
+          </section>
+
+          <section id="termination" class="policy">
+            <h3 class="section-title">10. Termination</h3>
+            <p>
+              We may suspend or terminate access where permitted by law for violation of these Terms, abuse, fraud, or security risk. You may stop using the Service at any time by uninstalling the app and discontinuing use.
+            </p>
+          </section>
+
+          <section id="disclaimers" class="policy">
+            <h3 class="section-title">11. Disclaimers</h3>
+            <p>
+              The Service is provided “as is” and “as available” to the fullest extent permitted by law. We do not guarantee uninterrupted operation, error-free performance, or specific outcomes.
+            </p>
+          </section>
+
+          <section id="liability" class="policy">
+            <h3 class="section-title">12. Limitation of Liability</h3>
+            <p>
+              To the maximum extent permitted by law, FocusForge and its operators are not liable for indirect, incidental, special, consequential, or punitive damages arising from use of the Service.
+            </p>
+            <p class="muted">
+              Where liability cannot be excluded, FocusForge’s aggregate liability for all claims will not exceed the amount you paid for the Service in the twelve (12) months before the event giving rise to the claim.
+            </p>
+          </section>
+
+          <section id="indemnity" class="policy">
+            <h3 class="section-title">13. Indemnification</h3>
+            <p>
+              You agree to defend, indemnify, and hold harmless FocusForge from claims, liabilities, damages, losses, and expenses (including reasonable attorneys’ fees) arising from your misuse of the Service or violation of these Terms.
+            </p>
+          </section>
+
+          <section id="disputes" class="policy">
+            <h3 class="section-title">14. Dispute Resolution</h3>
+            <p>
+              To the extent permitted by law, disputes will be resolved through binding arbitration on an individual basis, and not in a class, consolidated, or representative action. Where arbitration is not permitted, disputes will be brought in the courts specified below.
+            </p>
+          </section>
+
+          <section id="law" class="policy">
+            <h3 class="section-title">15. Governing Law</h3>
+            <p>
+              These Terms are governed by the laws of the State of North Carolina, without regard to conflict of law principles.
+            </p>
+          </section>
+
+          <section id="changes" class="policy">
+            <h3 class="section-title">16. Changes to Terms</h3>
+            <p>
+              We may update these Terms from time to time. Continued use after an update means you accept the updated Terms.
+            </p>
+          </section>
+
+          <section id="contact" class="policy">
+            <h3 class="section-title">17. Contact</h3>
+            <p>For legal or support questions, contact: <a href="mailto:officialfocusforgeapp@gmail.com">officialfocusforgeapp@gmail.com</a></p>
+          </section>
+
+          <footer>
+            <div class="footer-row">
+              <div>© <span id="year"></span> FocusForge. All rights reserved.</div>
+              <div class="footer-links">
+                <a href="#content">Back to top</a>
+                <a href="/privacy.html">Privacy</a>
+                <a href="/refunds.html">Refunds</a>
+                <a href="/dmca.html">DMCA</a>
+              </div>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
